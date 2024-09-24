@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -37,7 +38,7 @@ namespace curso.api.tests.Integrations.Controllers
             };
 
             //Act
-            StringContent content = new StringContent(JsonConvert.SerializeObject(loginViewModelInput));
+            StringContent content = new StringContent(JsonConvert.SerializeObject(loginViewModelInput), Encoding.UTF8, "application/json");
 
             var httpClientRequest = _httpClient.PostAsync("/api/alunos/login", content).GetAwaiter().GetResult();
 
