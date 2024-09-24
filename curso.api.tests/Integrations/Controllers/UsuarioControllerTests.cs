@@ -20,19 +20,27 @@ namespace curso.api.tests.Integrations.Controllers
             _httpClient = _factory.CreateClient();
         }
 
+        //WhenGivenThen
+        //Quando_Dados_EntaoResultadoEsperado
+        //Login_ENteringExistingEmailAndPassword_ReturnSuccess
+
         [Fact]
-        public void Logar()
+        public void Logar_InformandoUsuarioESenhaExistentes_RetornarSucesso()
         {
+
+            //Arrange
             var loginViewModelInput = new LoginViewModelInput
             {
                 Email = "adriano@teste.com",
                 Senha = "321789"
             };
 
+            //Act
             StringContent content = new StringContent(JsonConvert.SerializeObject(loginViewModelInput));
 
             var httpClientRequest = _httpClient.PostAsync("/api/alunos/login", content).GetAwaiter().GetResult();
 
+            //Assert
             Assert.Equal(System.Net.HttpStatusCode.OK, httpClientRequest.StatusCode);
         }
     }
