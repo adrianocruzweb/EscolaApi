@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -41,7 +42,7 @@ namespace curso.api.tests.Integrations.Controllers
             var httpClientRequest = _httpClient.PostAsync("/api/alunos/login", content).GetAwaiter().GetResult();
 
             //Assert
-            Assert.Equal(System.Net.HttpStatusCode.OK, httpClientRequest.StatusCode);
+            Assert.Equal(HttpStatusCode.OK, httpClientRequest.StatusCode);
         }
     }
 }
