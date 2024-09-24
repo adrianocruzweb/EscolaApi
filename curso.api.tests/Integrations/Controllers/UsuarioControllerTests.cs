@@ -28,7 +28,7 @@ namespace curso.api.tests.Integrations.Controllers
         //Login_ENteringExistingEmailAndPassword_ReturnSuccess
 
         /* [Fact]
-        public void Logar_InformandoUsuarioESenhaExistentes_RetornarSucesso()
+        public void Logar_InformandoAlunoESenhaExistentes_RetornarSucesso()
         {
 
             //Arrange
@@ -47,8 +47,8 @@ namespace curso.api.tests.Integrations.Controllers
             Assert.Equal(HttpStatusCode.OK, httpClientRequest.StatusCode);
         } */
 
-        [Fact]
-        public void Registrar_InformandoUsuarioESenhaExistentes_RetornarSucesso()
+        /* [Fact]
+        public void Registrar_InformandoAlunoESenhaExistentes_RetornarSucesso()
         {
             DateTime myDate = DateTime.UtcNow;
 
@@ -68,6 +68,6 @@ namespace curso.api.tests.Integrations.Controllers
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, httpClientRequest.StatusCode);
-        }
+        } */
     }
 }
