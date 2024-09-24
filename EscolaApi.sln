@@ -1,0 +1,41 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2AA7A8BA-210F-4409-ABCF-EEAEE98EC60F}"
+	ProjectSection(SolutionItems) = preProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "curso.api.tests", "curso.api.tests\curso.api.tests.csproj", "{DEF880C9-CE1D-461C-80B7-4CE4F39A41B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolaApi", "src\EscolaApi.csproj", "{8734B7AE-9D9E-4BC2-9C95-602F96225044}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46190E86-BEBD-4A84-9731-51987E4BF327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEF880C9-CE1D-461C-80B7-4CE4F39A41B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF880C9-CE1D-461C-80B7-4CE4F39A41B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF880C9-CE1D-461C-80B7-4CE4F39A41B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF880C9-CE1D-461C-80B7-4CE4F39A41B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8734B7AE-9D9E-4BC2-9C95-602F96225044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8734B7AE-9D9E-4BC2-9C95-602F96225044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8734B7AE-9D9E-4BC2-9C95-602F96225044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8734B7AE-9D9E-4BC2-9C95-602F96225044}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7E73046-21C5-4B0B-BBFB-4E0B31DF528F}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8734B7AE-9D9E-4BC2-9C95-602F96225044} = {46190E86-BEBD-4A84-9731-51987E4BF327}
+		{DEF880C9-CE1D-461C-80B7-4CE4F39A41B6} = {2AA7A8BA-210F-4409-ABCF-EEAEE98EC60F}
+	EndGlobalSection
+EndGlobal
