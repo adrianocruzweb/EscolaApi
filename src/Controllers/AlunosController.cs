@@ -15,7 +15,7 @@ public class AlunosController : ControllerBase
         _context = context;
     }
 
-    [HttpPost]
+    [HttpPost("Registrar")]
     public async Task<IActionResult> RegistrarAluno([FromBody] Aluno aluno)
     {
         _context.Alunos.Add(aluno);
