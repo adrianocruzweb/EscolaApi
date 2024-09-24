@@ -10,7 +10,7 @@ using Xunit;
 
 namespace curso.api.tests.Integrations.Controllers
 {
-    public class AlunoControllerTests
+    public class AlunoControllerTests : IClassFixture<WebApplicationFactory<Startup>>
     {
         private readonly WebApplicationFactory<Startup> _factory;
         private readonly HttpClient _httpClient;
